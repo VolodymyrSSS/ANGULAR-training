@@ -1,0 +1,14 @@
+<div class="tech">
+  <h3>The list of IT technologies</h3>
+  <h4 *ngFor='let item of items; let i = index'>{{ i + 1 }}  {{ item }}</h4>
+</div>
+
+<h3>The list of fruits</h3>
+<ul class="fruits">
+  <li *ngFor='let fruit of fruits; let i = index'>{{ i + 1 }}  {{ fruit }}</li>
+</ul>
+
+<h3>The list of vegetables</h3>
+<ul class="vegetables">
+  <li *ngFor='let vegetable of vegetables; let i = index;' [ngClass]="['first', 'last']"> {{ i + 1 }}  {{ vegetable }}</li>
+</ul>
