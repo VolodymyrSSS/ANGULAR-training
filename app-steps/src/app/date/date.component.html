@@ -6,3 +6,19 @@
   <h3>The current time: {{ message1 }} {{ message4 }}</h3>
   <p>example of interpolation result is write on a place: 2 + 2 = {{ 2 + 2}}</p>
 </div>
+
+<!-- <div class="logged-block"  *ngIf="loggedIn; else loggedOut">
+  <h2>Logged in</h2>
+</div>
+
+<ng-template #loggedOut>
+  <h2>You are not logged. Login please!</h2>
+</ng-template> -->
+
+<ng-template *ngIf="loggedIn; then loggedIn; else loggedOut"></ng-template>
+<ng-template #loggedIn>
+  <h2>Logged in</h2>
+</ng-template>
+<ng-template #loggedOut>
+  You are not logged. Login please!
+</ng-template>

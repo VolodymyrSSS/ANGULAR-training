@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateComponent implements OnInit {
 
+  loggedIn = false;
+
   message1: string = new Date().toDateString();
   message2: string;
   message3: string = new Date().toTimeString();
