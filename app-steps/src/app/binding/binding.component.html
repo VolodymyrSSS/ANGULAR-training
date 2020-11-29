@@ -2,3 +2,27 @@
 <input type="text" [(ngModel)]="text" >
 
 <p>{{ text }}</p>
+
+<!-- <div [ngClass]="{class1: true}">
+  <h2>That is styling part</h2>
+  <p [ngClass]="{class2: true}">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident</p>
+</div> -->
+
+<!-- <div [class.class1]="true">
+  <h2>That is styling part</h2>
+  <p [class.class2]="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident</p>
+</div> -->
+
+<div [ngStyle]="{'color':'#8B0000', 'background-color':'#D3D3D3'}">
+  <h2>That is styling part</h2>
+  <p [ngStyle]="{'color':'#F08080', 'background-color':'#696969'}">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident</p>
+</div>
+
+<div [ngClass]="{invisible: visibility}">
+  <h2>That is styling part</h2>
+  <p [ngClass]="{class2: true}">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perferendis! Adipisci odio natus aperiam nulla eos tempora ex eius veritatis sed vero dicta officia saepe commodi sapiente fugit, nobis, cupiditate minus repudiandae magni officiis alias eveniet in perferendis enim! Nostrum odio aspernatur similique? Nostrum, reiciendis quas dolores nisi aperiam itaque blanditiis deleniti quos unde nobis.</p>
+</div>
+<button class="btn-visib" (click)="toggle()">Toggle</button>
+
+
+
