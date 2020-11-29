@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NewOneComponent } from './new-one/new-one.component';
 import { DateComponent } from './date/date.component';
 import { LoopedComponent } from './looped/looped.component';
+import { ClickComponent } from './click/click.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { LoopedComponent } from './looped/looped.component';
     NewOneComponent,
     DateComponent,
     LoopedComponent,
+    ClickComponent,
   ],
   imports: [
     BrowserModule

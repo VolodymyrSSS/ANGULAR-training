@@ -1,0 +1,8 @@
+<button class="btn-reap" (click)="myEvent($event)">Event</button>
+
+<button class="btn-toggle" *ngIf="isCollapsed" (click)="toggleCollapse()">Show</button>
+<button class="btn-toggle" *ngIf="!isCollapsed" (click)="toggleCollapse()">Hide</button>
+
+<div  *ngIf="!isCollapsed">
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore laudantium quia amet harum error libero nemo deserunt maiores. Voluptates corrupti at esse architecto voluptatem sit, sunt doloremque ut sint debitis consequatur voluptatibus tempora, ea voluptatum deleniti nam aperiam quidem natus! Rem earum consequatur obcaecati fugit aut libero nulla quibusdam itaque molestias, enim dolorem illum recusandae.</p>
+</div>
