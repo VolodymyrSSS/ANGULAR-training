@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
 import { PriceComponent } from './price/price.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NewServiceService } from './new-service.service';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -44,7 +46,7 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [NewServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
