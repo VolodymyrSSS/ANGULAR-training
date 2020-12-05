@@ -5,8 +5,4 @@ import { Injectable } from '@angular/core';
 })
 export class NewServiceService {
 
-  consoleText(arg){
-    console.log(arg);
-  }
-  constructor() { }
 }
