@@ -1,0 +1,57 @@
+#footer {
+  background: #051120;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    background: transparent;
+    color: white;
+    padding: 15px;
+    margin: 0;
+  }
+
+  a {
+    display: flex;
+    color: white;
+    margin: auto;
+    border-radius: 70px;
+    max-height: 55px;
+    height: 55px;
+    width: 55px;
+    max-width: 55px;
+    background: #ccc;
+    text-decoration: none;
+    transition: all .5s;
+  }
+
+  a:hover {
+    background: white;
+  }
+
+  img {
+    width: 57px;
+    display: flex;
+    height: 53px;
+    fill: white;
+    padding: 7px;
+  }
+
+}

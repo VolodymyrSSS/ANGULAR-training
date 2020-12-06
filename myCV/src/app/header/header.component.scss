@@ -1,0 +1,62 @@
+#header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../../assets/img/star-wallpapers-blue.jpg');
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(221, 221, 221);
+  background-size: cover;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .logo {
+      color: #eee;
+      font-size: 20vh;
+      font-family: 'Dancing Script', cursive;
+      z-index: 10;
+      position: relative;
+
+      .logo-title {
+        position: relative;
+        z-index: 11;
+      }
+    }
+    .logo::after {
+      height: 27vh;
+      width: 27vh;
+      content: '';
+      border: 1px #eee solid;
+      background: rgba(238, 238, 238, 0.1);
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0vh;
+      left: -2vh;
+      z-index: 1;
+    }
+    .slogan {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Ubuntu', sans-serif;
+      align-items: center;
+
+      p {
+        background: transparent;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+      }
+    }
+  }
+}

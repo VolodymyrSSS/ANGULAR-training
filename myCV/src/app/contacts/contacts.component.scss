@@ -1,0 +1,35 @@
+#contacts {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #051120;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+
+  .container {
+    width: 800px;
+    align-items: center;
+
+    .name {
+      font-size: 30px;
+    }
+    .context {
+      background: #eee;
+      color: #051120c2;
+      display: inline-block;
+    }
+
+    p {
+      // display: block;
+      padding: 15px;
+      margin: 0;
+    }
+  }
+
+  .container.vertical {
+    display: flex;
+    flex-direction: column;
+  }
+}

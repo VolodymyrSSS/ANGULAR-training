@@ -1,0 +1,29 @@
+#goals {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  background: #ccc url(../../assets/img/open_notebook-min.jpg) center center;
+  background-size: cover;
+  justify-content: center;
+
+  .container {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    color: #051120;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+
+    .goals-slogan {
+      font-size: 30px;
+      background: rgba(254, 254, 254, 0.8);
+      padding: 20px;
+      margin: 10px 0;
+    }
+  }
+}

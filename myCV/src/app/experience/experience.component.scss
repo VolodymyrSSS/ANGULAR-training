@@ -1,0 +1,73 @@
+#experience {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #051120;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    
+    .experience-title {
+      font-size: 30px;
+      background: #f8f8f8;
+      margin: 0 0 20px;
+      padding: 20px 0;
+    }
+
+    .experience-step {
+      display: flex;
+      margin: 20px 0;
+      background: #f8f8f8;
+
+      .experience-context {
+        flex: 1;
+        // width: 50%;
+        padding: 20px 0;
+
+        .experience-name {
+          font-size: 30px;
+          padding: 0 20px 20px;
+          margin: 0;
+          text-align: left;
+        }
+        .experience-text {
+          display: flex; 
+          flex-direction: column;
+
+          .experience-position {
+            padding-bottom: 25px;
+
+            .time {
+              color: #051120c2;
+              font-size: 16px;
+              padding-bottom: 5px;
+              background: transparent;
+            }
+          }
+        }
+      }
+      .lucky-lab-picture {
+        flex: 2;
+        height: 100%;
+        background-image: url(../../assets/img/smart-city-lab.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .education-picture{
+        flex: 2;
+        height: 100%;
+        background-image: url(../../assets/img/educ2.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
