@@ -1,0 +1,25 @@
+<h2>Our products</h2>
+
+<hr>
+
+<!-- With *ngFor, the div repeats for each product in the list. -->
+<div *ngFor="let product of products; index as productId">
+  
+  <h3>
+      <!-- The RouterLink directive helps to customize the anchor element. -->
+      <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <button (click)="share()">Share</button>
+  <!-- Pass the current product as input to the component using property binding. -->
+  <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+
+  <hr>
+
+</div>

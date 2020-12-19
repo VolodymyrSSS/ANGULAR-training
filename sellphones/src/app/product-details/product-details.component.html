@@ -1,0 +1,12 @@
+<h2>Product Details</h2>
+
+<!-- If a product exists, the div renders with a name/price/description. -->
+<div *ngIf="product" class="product-details"> 
+  <h3 class="product-name">{{ product.name }}</h3>
+  <!-- uses the currency pipe to transform product.price from a number to a currency string. -->
+  <h4 class="product-price">{{ product.price | currency }}</h4>
+  <p class="product-description">{{ product.description }}</p>
+</div>
+
+<!-- add a button with the label Buy, and bind the click event to the addToCart method. -->
+<button (click)="addToCart(product)">Buy</button>

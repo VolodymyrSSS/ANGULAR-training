@@ -1,0 +1,30 @@
+<h3>Cart</h3>
+
+<!-- add a link from the CartComponent view to the ShippingComponent view -->
+<p>
+  <a routerLink="/shipping">Shipping Prices</a>
+</p>
+
+<div class="cart-item" *ngFor="let item of items">
+  <span class="cart-item-name">{{ item.name }}</span>
+  <span class="cart-item-price">{{ item.price | currency }}</span>
+</div>
+
+<!-- add a checkout form to reflect the model in the view -->
+<!-- ngSubmit event binding to listen for the form submission -->
+<!-- and call the onSubmit-method with the checkoutForm value -->
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+  <div>
+    <label for="name">Name</label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">Address</label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+  
+</form>
