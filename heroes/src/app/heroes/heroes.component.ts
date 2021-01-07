@@ -52,7 +52,8 @@ export class HeroesComponent implements OnInit {
 
   // This asynchronous approach will work when the HeroService requests heroes from the server
   getHeroes() {
-    this.heroService.getHeroes().subscribe((heroes: Hero[]) => this.heroes = heroes);
+    this.heroService.getHeroes()
+      .subscribe((heroes: Hero[]) => this.heroes = heroes);
   } // The subscribe() method passes the emitted array to the callback, which sets the component's heroes property.
 
   
